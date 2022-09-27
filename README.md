@@ -42,7 +42,31 @@ This repository is the training pipeline specific for Light-NAS Quantization mod
     cd scripts
     sh run_train_base_best_low_aug.sh
     ```
+***
 
+## Results and Models
+
+|Backbone|Param (MB)|BitOps (G)|ImageNet TOP1|Structure|Download|
+|:----|:----|:----|:----|:----|:----|
+|MBV2-8bit|3.4|19.2|71.90%| -| -|
+|MBV2-4bit|2.3|7|68.90%| -|- |
+|Mixed19d2G|3.2|18.8|74.80%|[txt]|[model](https://idstcv.oss-cn-zhangjiakou.aliyuncs.com/LightNAS/quant/mixed-7d0G/quant_238_70.7660.pth.tar) |
+|Mixed7d0G|2.2|6.9|70.80%|[txt] |[model](https://idstcv.oss-cn-zhangjiakou.aliyuncs.com/LightNAS/quant/mixed-19d2G/quant_237_74.8180.pth.tar) |
+
+***
+## Citation
+
+If you use this toolbox in your research, please cite the paper.
+
+```
+@article{qescore,
+  title     = {Entropy-Driven Mixed-Precision Quantization for Deep Network Design on IoT Devices},
+  author    = {Zhenhong Sun and Ce Ge and Junyan Wang and Ming Lin and Hesen Chen and Hao Li and Xiuyu Sun},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2022},
+}
+
+***
 ## Main Contributors
 
 Hesen Chen, [Zhenhong Sun](https://sites.google.com/view/sunzhenhong).
